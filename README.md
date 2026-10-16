@@ -252,6 +252,8 @@ npm run dev      # listen on port 5173
 
 **Recommended: Render (backend) + Vercel/Cloudflare Pages for the static frontend**, or serve the built frontend from the backend in production.
 
+🔗 **Live site:** [https://student-career-and-placement-platform.onrender.com](https://student-career-and-placement-platform.onrender.com)
+
 #### Backend on Render
 
 1. Push `server/` to GitHub.
