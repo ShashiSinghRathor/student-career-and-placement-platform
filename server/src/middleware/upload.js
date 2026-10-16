@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 const multer = require("multer");
+const asyncHandler = require("../utils/asyncHandler");
 const cloudinary = require("cloudinary").v2;
 const env = require("../config/env");
 const ApiError = require("../utils/ApiError");
