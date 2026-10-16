@@ -8,6 +8,8 @@
 [![MongoDB](https://img.shields.io/badge/mongodb-atlas-green.svg)](https://www.mongodb.com/atlas)
 [![Socket](https://img.shields.io/badge/socketio-4.7-green.svg)](https://socket.io)
 
+**🌐 Live Demo — [Frontend](https://student-career-and-placement.onrender.com) | [Backend API](https://student-career-and-placement-platform-api.onrender.com/api/health)**
+
 CareerConnect is a **full-stack, production-quality platform** connecting Students, Companies/Recruiters, and College Administrators for internships, jobs, placements, applications, interviews, and career management — purpose-built for college placement cells.
 
 ---
