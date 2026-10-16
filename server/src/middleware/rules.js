@@ -35,8 +35,8 @@ exports.jobRules = [
   body("jobType").isIn(["internship", "full-time", "part-time", "contract"]).withMessage("Invalid job type"),
   body("location").trim().escape().notEmpty().withMessage("Location required"),
   body("deadline").isISO8601().withMessage("Valid deadline required"),
-  body("salary.min").optional({ nullable: true }).isNumber(),
-  body("salary.max").optional({ nullable: true }).isNumber(),
+  body("salary.min").optional({ nullable: true }).isFloat(),
+  body("salary.max").optional({ nullable: true }).isFloat(),
   body("eligibleBranches").optional(),
 ];
 
