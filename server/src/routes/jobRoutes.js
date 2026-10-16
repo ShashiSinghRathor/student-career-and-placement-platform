@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const { protect, authorize } = require("../middleware/auth");
 const c = require("../controllers/jobController");
+const applicationC = require("../controllers/applicationController");
 const { applicationRules, checkValidation, mongoIdParam } = require("../middleware/validate");
 const { uploadResumeMiddleware } = require("../middleware/upload");
 
@@ -25,7 +26,7 @@ router.post(
   applicationRules,
   checkValidation,
   uploadResumeMiddleware,
-  c.applyToJob
+  applicationC.applyToJob
 );
 
 function listApplicantsGuard(req, res, next) {
