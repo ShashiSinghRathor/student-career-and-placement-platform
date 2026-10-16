@@ -1,0 +1,24 @@
+node_modules/
+client/node_modules/
+
+dist/
+client/dist/
+
+.env
+.env.*
+!.env.example
+uploads/
+*.log
+.DS_Store
+
+# Local MongoDB portable zip (dev only)
+server/mongo-db/
+server/mongod.exe
+server/mongod.cfg
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+mongo-db/
