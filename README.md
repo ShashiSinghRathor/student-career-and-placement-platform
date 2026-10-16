@@ -252,7 +252,6 @@ npm run dev      # listen on port 5173
 
 **Recommended: Render (backend) + Vercel/Cloudflare Pages for the static frontend**, or serve the built frontend from the backend in production.
 
-🔗 **Live site:** [https://student-career-and-placement-platform.onrender.com](https://student-career-and-placement-platform.onrender.com)
 
 #### Backend on Render
 
@@ -327,3 +326,20 @@ This project is provided as-is for educational and placement purposes. Not for c
 ---
 
 Built with ❤️ for students and placement cells.
+
+#### How to deploy on Render
+
+1. Create a Render account at [https://render.com](https://render.com) and connect this GitHub repository.
+2. Create a **Web Service** for the backend:
+   - Root directory: `server/`
+   - Build command: `npm install`
+   - Start command: `node src/server.js`
+3. Add these environment variables to the Render Web Service:
+   - `MONGO_URI`
+   - `JWT_SECRET`
+   - `JWT_EXPIRES_IN`
+   - `PORT`
+   - `CLIENT_URL`
+4. Set `CLIENT_URL` to your frontend URL once the frontend is deployed, or to the backend Render URL while you are still setting things up.
+5. For production email and file uploads, also add the Cloudinary and SMTP environment variables described in `server/.env.example`.
+6. Deploy the frontend separately as a static site, or serve the built `client/dist/` from the backend in production.
